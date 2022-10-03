@@ -1,0 +1,53 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.conts#blur.active{
+  filter: blur(20px);
+  pointer-events: none;
+  user-select: none;
+}
+.conts{
+ 
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: aqua;
+  padding: 20px;
+  transition: 0.5s;
+
+}
+.conts .cont{
+
+ max-width: 800px;
+ color: blue;
+}
+a{
+ 
+  padding: 5px 20px;
+  margin-top: 20px;
+  text-decoration: none;
+  color: aliceblue;
+  background-color: black;
+}
+#popup_1{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,50%);
+  width: 600px;
+  padding: 50px;
+  background-color: rgb(13, 108, 192);
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.5s;
+}
+#popup_1.active{
+  top: 30%;
+  visibility: visible;
+  opacity: 1;
+  transition: 0.5s;
+}
