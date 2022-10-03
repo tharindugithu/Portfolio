@@ -168,12 +168,13 @@ export default function App() {
 
                 </SwiperSlide>
             </Swiper>
+            <dir id="contact"></dir>
             <a href="#up" id="roc">
                 <button className="goup">
                     <img src={roc} alt="" />
                 </button>
             </a>
-            <div>
+            <div >
                 <div className="separate-4">
                     <div className="line"></div>
                     <h1 data-aos="zoom-in">Contact Me</h1>
@@ -182,7 +183,7 @@ export default function App() {
 
                 <section className="contact">
                     <div className="content">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias assumenda similique, quae aspernatur dolor odit sequi illo nisi ab sed.</p>
+                        <p>I hope you have seen my progress by visiting this website. If you want to contact me, you can contact me by filling the forum below or by using my email or phone number.</p>
                     </div>
                     <div className="container-2">
                         <div className="contactinfo" data-aos="slide-up">
@@ -261,7 +262,7 @@ export default function App() {
                         </div>
                     </div>
                     <div className="cvbtn">
-                        <a href="https://drive.google.com/file/d/1zFVCMk0F3rrhgX11SU3epQVfVl8bAbvm/view?usp=sharing">Download CV</a>
+                        <a href="https://github.com/tharindugithu/docs/raw/main/test.pdf">Download CV</a>
                     </div>
                 </section>
                 <section className="social">

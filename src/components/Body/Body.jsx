@@ -37,6 +37,10 @@ import wal1 from './wal1.jpg'
 import profile from './profile.png'
 import github from './github.png'
 import h6 from './health.JPG'
+import B1 from './B1.png'
+import M1 from './M1.JPG'
+import M2 from './M2.JPG'
+
 export default function Body() {
     const mystyle = {
         textAlign: 'start',
@@ -196,7 +200,7 @@ export default function Body() {
                         <div className="bio" >
                             <h1 className="name">Tharindu Mandusanka</h1>
                             <img src={profile} alt="" />
-                            <p >Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima nobis et illo nostrum, iste mollitia dolorem dignissimos error est, sequi quae eaque adipisci assumenda unde praesentium odit sed enim soluta.Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima nobis et illo nostrum, iste mollitia dolorem dignissimos error est, sequi quae eaque adipisci assumenda unde praesentium odit sed enim soluta.</p>
+                            <p >Hi, I'm Tharindu. I am MERN/MEAN Stack ,Java Developer AND C# devaloper and, 3rd year Undergraduate, who follows the BSc (Hons) in Software Engineering Degree Program at Sri Lanka Technological Campus.I am passionate about fullstack web devalopment ,windows application devalopment and mobile application devalopment.I want to sharpen my programming skills and adapt to the competition in a competitive environment.I would like to use the experience gained in such cases to create a more efficient and effective product.</p>
                         </div>
                     </div>
                 </div>
@@ -270,25 +274,25 @@ export default function Body() {
                 </Tilt>
                 <Tilt className="parallax-effect" perspective={500}>
                     <div className="project rgb" data-aos='slide-up' >
-                        <img src={h6} alt="" />
-                        <h3>Health Care WebApp</h3>
-                        <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At accusamus, accusantium quasi maxime omnis blanditiis laboriosam maiores tempora minima officia.</h4>
+                        <img src={B1} alt="" />
+                        <h3>Java Bidding System</h3>
+                        <h4>This is a Java Bidding System with Client Server and Publisher Subscriber architectures developing by using Java Network Programming</h4>
                         <button onClick={toggle5}>Reed more..</button>
                         <button>
                             <img src={github} alt="" />
-                            <a href="http://">Goto Project</a>
+                            <a href="https://github.com/tharindugithu/Bidding-using-java/tree/master" target={'_blank'}>Goto Project</a>
                         </button>
                     </div>
 
                 </Tilt>
                 <Tilt className="parallax-effect" perspective={500}>      <div className="project rgb" data-aos='slide-up' >
-                    <img src={h6} alt="" />
-                    <h3>Health Care WebApp</h3>
-                    <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At accusamus, accusantium quasi maxime omnis blanditiis laboriosam maiores tempora minima officia.</h4>
+                    <img src={M1} alt="" />
+                    <h3>Mobile Application for IT faculty</h3>
+                    <h4>The purpose of this project is to develop mobile application to provide main features to conduct studies online for students and lecturers.</h4>
                     <button onClick={toggle6}>Reed more..</button>
                     <button>
                         <img src={github} alt="" />
-                        <a href="http://">Goto Project</a>
+                        <a href="https://github.com/tharindugithu/Mobile-app-for-help-to-LMS" target={'_blank'}>Goto Project</a>
                     </button>
                 </div></Tilt>
                 <Tilt className="parallax-effect" perspective={500}>
@@ -387,6 +391,8 @@ export default function Body() {
                     <p style={mystyle}>&#x2022; https://healthcarewebapp.herokuapp.com/WebApp/DoctorsList/</p>
                     <p style={mystyle}>&#x2022;https://healthcarewebapp.herokuapp.com/WebApp/Patient/Register/</p>
                     <p style={mystyle}>&#x2022;https://healthcarewebapp.herokuapp.com/WebApp/Patient/Login/</p>
+                    <br /><h3>Link</h3>
+                    <p style={mystyle}>&#x2022;Application Github -- <a href="https://github.com/tharindugithu/django_app" target={'blank'}>Click to visit</a> </p>
                     <p style={mystyle}>&#x2022;Project Started and Finshed year-2022</p>
                     <button className="goproject">
                         <img src={github} alt="" />
@@ -413,41 +419,73 @@ export default function Body() {
                     <p style={mystyle}>&#x2022;BAackend app build-- PHP,CSS,HTML</p>
                     <p style={mystyle}>&#x2022;Database-MySQL</p>
                     <p style={mystyle}>&#x2022;Project Started and Finshed year-2022</p>
+                    <br /><h3>Link</h3>
+                    <p style={mystyle}>&#x2022;Application Github -- <a href="https://github.com/tharindugithu/Food-Order-Website-with-PHP-and-MySQL" target={'blank'}>Click to visit</a> </p>
                     <button className="goproject">
                         <img src={github} alt="" />
-                        <a href="http://">Goto Project</a>
+                        <a href="https://github.com/tharindugithu/Food-Order-Website-with-PHP-and-MySQL" target={'_blank'}>Goto Project</a>
                     </button>
                     <button onClick={toggle4}>Close</button>
                 </div>
 
                 <div className="popup" id="popup_5">
                     <Carousel showArrows={true} thumbWidth={100} autoPlay={true} interval={2000} transitionTime={500} swipeScrollTolerance={2} infiniteLoop={true}>
-                        <img src={h6} alt="" />
-                        <img src={h6} alt="" />
-                        <img src={h6} alt="" />
-                        <img src={h6} alt="" />
+                        <img src={B1} alt="" />
                     </Carousel>
-                    <h1>Min ipsum dolor sit amet consectetur adipisicing elit. Eum, omnis.</h1>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita, voluptatibus. Similique tempora ex cumque inventore, autem nesciunt commodi fuga unde?</p>
+                    <h1> Java Bidding System with Client Server and Publisher Subscriber architectures</h1>
+                    <p style={mystyle}>&#x2022;Login and Registration</p>
+                    <p style={mystyle}>&#x2022;The server can handle multiple users</p>
+                    <p style={mystyle}>&#x2022;Bidding time can be set when starting the bidding</p>
+                    <p style={mystyle}>&#x2022;Client-Server Architecture</p>
+                    <p style={mystyle}>&emsp;&#9900;Companies can publish items and edit items' details</p>
+                    <p style={mystyle}>&emsp;&#9900;Clients can bid on items</p>
+                    <p style={mystyle}>&emsp;&#9900;Both users can view the list of the current items</p>
+                    <p style={mystyle}>&emsp;&#9900;Both users can subscribe to items</p>
+                    <p style={mystyle}>&emsp;&#9900;Both users can view the details of subscribed items</p>
+                    <p style={mystyle}>&#x2022;Publisher-Subscriber Architecture</p>
+                    <p style={mystyle}>&emsp;&#9900;Reserve subscribed items bid update notifications</p>
+                    <p style={mystyle}>&emsp;&#9900;Notifications about added new items</p>
+                    <br /><h3>Link</h3>
+                    <p style={mystyle}>&#x2022;Application Github -- <a href="https://github.com/tharindugithu/Bidding-using-java" target={'blank'}>Click to visit</a> </p>
+                    <p style={mystyle}>&#x2022;Project Started and Finshed year-2021</p>
                     <button className="goproject">
                         <img src={github} alt="" />
-                        <a href="http://">Goto Project</a>
+                        <a href="https://github.com/tharindugithu/Bidding-using-java" target={'_blank'}>Goto Project</a>
                     </button>
                     <button onClick={toggle5}>Close</button>
                 </div>
 
                 <div className="popup" id="popup_6">
                     <Carousel showArrows={true} thumbWidth={100} autoPlay={true} interval={2000} transitionTime={500} swipeScrollTolerance={2} infiniteLoop={true}>
-                        <img src={h6} alt="" />
-                        <img src={h6} alt="" />
-                        <img src={h6} alt="" />
-                        <img src={h6} alt="" />
+                        <img src={M1} alt="" />
+                        <img src={M2} alt="" />
                     </Carousel>
-                    <h1>Min ipsum dolor sit amet consectetur adipisicing elit. Eum, omnis.</h1>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita, voluptatibus. Similique tempora ex cumque inventore, autem nesciunt commodi fuga unde?</p>
+                    <h1>Mobile Application for SLTC IT faculty</h1>
+                    <p>The purpose of this project is to develop mobile application to provide main features to
+                        conduct studies online for students and lecturers. We will consider only batch 7 in this
+                        project. This application will be a kind of redundant system for currently operating LMS
+                        and it is a web application Developing a mobile application for this purpose will be
+                        useful for end users when navigating and accessing. As main features it contains page for
+                        announcements, public chat, calendar, and page to provide academic resources.</p>
+                    <p>Our goal is to build a native mobile application to migrate LMS, Zoom. The student should be
+                        informed about assignments, lectures, academic timetables, and should be able to connect to
+                        related parties to solve their academic problems using the same platform.
+                        This mobile application development will cover a quick introduction to setting up Flutter SDK
+                        with Dart, Android Studio IDE, and Android Emulator locally on our own machine.
+                        However, setting up own local environment is not required to follow exercises in this mobile
+                        application development. You should be able to run Flutter and Dart Apps right here on the
+                        Educative platform.
+                        We’ll can start from building a fundamental with Flutter and Dart while learning the fundamentals
+                        of Flutter widgets.
+                        We’ll learn about layouts by building a contact profile page for Android device’s address book.
+                        We’ll understand styling apps using Flutter themes.
+                    </p>
+                    <br /><h3>Link</h3>
+                    <p style={mystyle}>&#x2022;Application Github -- <a href="https://github.com/tharindugithu/Mobile-app-for-help-to-LMS" target={'blank'}>Click to visit</a> </p>
+                    <p style={mystyle}>&#x2022;Project Started and Finshed year-2021</p>
                     <button className="goproject">
                         <img src={github} alt="" />
-                        <a href="http://">Goto Project</a>
+                        <a href="https://github.com/tharindugithu/Mobile-app-for-help-to-LMS" target={'_blank'}>Goto Project</a>
                     </button>
                     <button onClick={toggle6}>Close</button>
                 </div>
@@ -468,6 +506,7 @@ export default function Body() {
                     <button onClick={toggle7}>Close</button>
                 </div>
             </div>
+            <div id="services"></div>
             <div className="separate-3">
                 <div className="line"></div>
                 <h1 data-aos="zoom-in" >Services</h1>

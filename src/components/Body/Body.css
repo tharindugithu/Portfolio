@@ -512,6 +512,9 @@ a {
     /* .readmore{
         margin-bottom: -28px;
     } */
+    .project img{
+        border-radius: 9px;
+    }
     .project h4 {
         margin-bottom: 10px;
     }

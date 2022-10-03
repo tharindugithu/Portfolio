@@ -38,9 +38,9 @@ export default function Navbar() {
                 <ul>
                     <li onClick={menuItemClick}><a href="#">Home</a></li>
                     <li onClick={menuItemClick}><a href="#bioo">About</a></li>
-                    <li onClick={menuItemClick}><a href="#projects">Services</a></li>
-                    <li onClick={menuItemClick}><a href="#">Contact</a></li>
-                    <li onClick={menuItemClick}><a href="#">Feedback</a></li>
+                    <li onClick={menuItemClick}><a href="#services">Services</a></li>
+                    <li onClick={menuItemClick}><a href="#contact">Contact</a></li>
+                    <li onClick={menuItemClick}><a href="#projects">Projects</a></li>
                 </ul>
             </nav>
 
