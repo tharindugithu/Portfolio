@@ -3,6 +3,7 @@ import './Navbar.css'
 import Aos from "aos";
 import 'aos/dist/aos.css'
 import { useEffect } from 'react';
+import close from './close.png'
 export default function Navbar() {
 
     const [state, seState] = React.useState(true)
@@ -29,7 +30,7 @@ export default function Navbar() {
                 <input type="checkbox" id="check" />
                 <label onClick={click} for="check" className="checkbtn" >
                     {state && <i className="fas fa-bars icon"></i>}
-                    {!state && <span className="close" ><img src="../close.png" alt="" /></span>}
+                    {!state && <span className="close" ><img src={close} alt="" /></span>}
 
                 </label>
                 <div className="lightbar"></div>d

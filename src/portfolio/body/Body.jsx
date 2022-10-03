@@ -17,6 +17,21 @@ import Tilt from 'react-parallax-tilt';
 // import required modules
 import { EffectCoverflow, Pagination } from "swiper";
 import { useForm } from "react-hook-form";
+import angular from './angular.png'
+import github from './github.png'
+import css from './css.png'
+import html from './html.png'
+import node from './node.png'
+import nextjs from './nextjs.png'
+import tailwind from './tailwind.png'
+import roc from './rocket.png'
+import javascript from './javascript.png'
+import mongo from './mongo.png'
+import rreact from './react.png'
+
+
+
+
 export default function App() {
 
     const { register, handleSubmit, formState: { errors } } = useForm();
@@ -103,45 +118,59 @@ export default function App() {
                 className="mySwiper"
             >
                 <SwiperSlide >
-                    <img src="../images/css.png" />
+                    <h1>MONGODB</h1>
+                    <img src={mongo} />
+
+                </SwiperSlide>
+                <SwiperSlide >
                     <h1>CSS</h1>
+                    <img src={css} />
+
                 </SwiperSlide>
                 <SwiperSlide>
-                    <img src="../images/github.png" />
                     <h1>GITHUB</h1>
+                    <img src={github} />
+
                 </SwiperSlide>
                 <SwiperSlide>
-                    <img src="../images/html.png" />
                     <h1>HTML</h1>
+                    <img src={html} />
+
                 </SwiperSlide>
                 <SwiperSlide>
-                    <img src="../images/nextjs.png" />
                     <h1>NEXTJS</h1>
+                    <img src={nextjs} />
+
                 </SwiperSlide>
                 <SwiperSlide>
-                    <img src="../images/node.png" />
                     <h1>NODE</h1>
+                    <img src={node} />
+
                 </SwiperSlide>
                 <SwiperSlide>
-                    <img src="../images/javascript.png" />
                     <h1>JAVASCRIPT</h1>
+                    <img src={javascript} />
+
                 </SwiperSlide>
                 <SwiperSlide>
-                    <img src="../images/tailwind.png" />
                     <h1>TAILWIND</h1>
+                    <img src={tailwind} />
+
                 </SwiperSlide>
                 <SwiperSlide>
-                    <img src="../images/react.png" />
                     <h1>REACT</h1>
+                    <img src={rreact} />
+
                 </SwiperSlide>
                 <SwiperSlide>
-                    <img src="../images/angular.png" />
                     <h1>ANGULAR</h1>
+                    <img src={angular} />
+
                 </SwiperSlide>
             </Swiper>
             <a href="#up" id="roc">
                 <button className="goup">
-                    <img src="./images/rocket.png" alt="" />
+                    <img src={roc} alt="" />
                 </button>
             </a>
             <div>

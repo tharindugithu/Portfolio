@@ -180,9 +180,9 @@ export default function Body() {
                 <div className="intro" >
                     <div className="info" id="up" data-aos="slide-down" >
                         <h1>HI!!! I am Tharindu Mandusanka</h1>
-                        <h1>// FullStack Webdevaloper</h1>
+                        <h1>// FullStack Webdevloper</h1>
                         <h1>Frontend Devaloper /Backend devloper</h1>
-                        <h1 id="bioo">App Devaloper</h1>
+                        <h1 id="bioo">App DEvaloper</h1>
                     </div>
                     <div className="separate-1">
                         <div className="line"></div>
