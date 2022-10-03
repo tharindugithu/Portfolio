@@ -242,7 +242,7 @@ a {
     }
 }
 
-#ab {}
+
 
 .separate-1 {
     margin-top: 5%;
@@ -283,8 +283,6 @@ a {
     transition: 1s;
     color: #1c7fee;
 }
-
-.projects#blur.active {}
 
 .popup {
     display: flex;
@@ -655,9 +653,6 @@ a {
         margin-top: 0px;
     }
 
-    .popup ul {}
-
-    .popup ul li {}
 
     .popup {
         border-radius: 20px 0 20px 0;
@@ -708,7 +703,7 @@ a {
 
     }
 
-    .thumb {}
+    
 
     .goproject img {
         width: 14px;
