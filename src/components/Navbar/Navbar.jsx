@@ -33,7 +33,7 @@ export default function Navbar() {
                     {!state && <span className="close" ><img src={close} alt="" /></span>}
 
                 </label>
-                <div className="lightbar"></div>d
+                <div className="lightbar"></div>
                 <label className="logo">TharinduDEV</label>
                 <ul>
                     <li onClick={menuItemClick}><a href="#">Home</a></li>

@@ -180,14 +180,25 @@ export default function Body() {
         <div className="whole" >
 
             <link rel="stylesheet" href="<NODE_MODULES_FOLDER>/react-responsive-carousel/lib/styles/carousel.min.css" />
+            <div className="insidebox">
+                <div className="info" id="up" data-aos="slide-down" >
+                    <h1>HI!!!&#128075; I am Tharindu Mandusanka</h1>
+                    <h1>// FullStack Webdevaloper//</h1>
+                    <h1>Frontend Devaloper /Backend devaloper</h1>
+                    <h1 id="bioo">Mobile App Devaloper</h1>
+                </div>
+            </div>
             <div className="container">
                 <div className="intro" >
-                    <div className="info" id="up" data-aos="slide-down" >
-                        <h1>HI!!! I am Tharindu Mandusanka</h1>
-                        <h1>// FullStack Webdevaloper</h1>
-                        <h1>Frontend Devaloper /Backend devloper</h1>
-                        <h1 id="bioo">App Devaloper</h1>
-                    </div>
+                    {/* <div className="insidebox">
+                        <div className="info" id="up" data-aos="slide-down" >
+                            <h1>HI!!!&#128075; I am Tharindu Mandusanka</h1>
+                            <h1>// FullStack Webdevaloper//</h1>
+                            <h1>Frontend Devaloper /Backend devaloper</h1>
+                            <h1 id="bioo">Mobile App Devaloper</h1>
+                        </div>
+                    </div> */}
+
                     <div className="separate-1">
                         <div className="line"></div>
                         <h1 data-aos="zoom-in" >About Me</h1>

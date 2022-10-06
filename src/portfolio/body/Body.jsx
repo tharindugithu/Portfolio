@@ -28,9 +28,9 @@ import roc from './rocket.png'
 import javascript from './javascript.png'
 import mongo from './mongo.png'
 import rreact from './react.png'
-
-
-
+import PHP from './PHP.png'
+import HEROKU from './HEROKU.png'
+import MYSQL from './MYSQL.png'
 
 export default function App() {
 
@@ -38,11 +38,13 @@ export default function App() {
     const [form, setForm] = React.useState({
         from_name: '',
         to_name: '',
-        message: '',
+        message: ''
+    })
+    const [formErrors, setFormErrors] = useState({
         from_nameError: '',
         to_nameError: '',
         messageError: ''
-    })
+    });
     function validate() {
         let from_nameError = ''
         let to_nameError = ''
@@ -61,7 +63,7 @@ export default function App() {
             messageError = "Cannot be Empty"
         }
         if (to_nameError || from_nameError || messageError) {
-            setForm({ to_nameError, from_nameError, messageError })
+            setFormErrors({ to_nameError, from_nameError, messageError })
             return false;
         }
         return true
@@ -76,7 +78,16 @@ export default function App() {
                 .then((result) => {
                     console.log(result.text);
                     alert('Details Are Submitted')
-                    window.location.reload();
+                    setFormErrors({
+                        from_nameError: '',
+                        to_nameError: '',
+                        messageError: ''
+                    })
+                    setForm({
+                        from_name: '',
+                        to_name: '',
+                        message: ''
+                    })
                 }, (error) => {
                     console.log(error.text);
                     alert('Something Went Wrong!!!')
@@ -86,8 +97,13 @@ export default function App() {
             alert('Please Input Valid Data!!!')
             setTimeout(delay, 2000)
             function delay() {
-                window.location.reload()
+                setForm({
+                    from_name: '',
+                    to_name: '',
+                    message: ''
+                });
             }
+
         }
     }
     function handleChange(e) {
@@ -96,7 +112,7 @@ export default function App() {
         })
     }
     useEffect(() => {
-        Aos.init({ duration: 1000 })
+        Aos.init({ duration: 2000 })
     }, [])
     return (
         <>
@@ -167,6 +183,21 @@ export default function App() {
                     <img src={angular} />
 
                 </SwiperSlide>
+                <SwiperSlide>
+                    <h1>PHP</h1>
+                    <img src={PHP} />
+
+                </SwiperSlide>
+                <SwiperSlide>
+                    <h1>HEROKU</h1>
+                    <img src={HEROKU} />
+
+                </SwiperSlide>
+                <SwiperSlide>
+                    <h1>MYSQL</h1>
+                    <img src={MYSQL} />
+
+                </SwiperSlide>
             </Swiper>
             <dir id="contact"></dir>
             <a href="#up" id="roc">
@@ -229,7 +260,7 @@ export default function App() {
                                         onChange={handleChange}
                                     />
                                     <span>Full Name</span>
-                                    <h3 className="error-text">{form.from_nameError}</h3>
+                                    <h3 className="error-text">{formErrors.from_nameError}</h3>
                                 </div>
                                 <div className="inputbox">
                                     <input
@@ -239,7 +270,7 @@ export default function App() {
                                         onChange={handleChange}
                                     />
                                     <span>Email</span>
-                                    <h3 className="error-text">{form.to_nameError}</h3>
+                                    <h3 className="error-text">{formErrors.to_nameError}</h3>
                                 </div>
 
                                 <div className="inputbox">
@@ -251,7 +282,7 @@ export default function App() {
                                         rows="2"
                                     ></textarea>
                                     <span>Type Your Message</span>
-                                    <h3 className="error-text">{form.messageError}</h3>
+                                    <h3 className="error-text">{formErrors.messageError}</h3>
                                 </div>
 
                                 <div className="inputbox subicon">

@@ -45,7 +45,7 @@ function App() {
         :
          
         <>
-         <Navbar/>
+     <Navbar/> 
      <Body/>
      <Body2  /> 
         </>
