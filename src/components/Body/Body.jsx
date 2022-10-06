@@ -213,10 +213,11 @@ export default function Body() {
                             <img src={profile} alt="" />
                             <p >Hi, I'm Tharindu. I am MERN/MEAN Stack ,Java Developer AND C# devaloper and, 3rd year Undergraduate, who follows the BSc (Hons) in Software Engineering Degree Program at Sri Lanka Technological Campus.I am passionate about fullstack web devalopment ,windows application devalopment and mobile application devalopment.I want to sharpen my programming skills and adapt to the competition in a competitive environment.I would like to use the experience gained in such cases to create a more efficient and effective product.</p>
                         </div>
+                        <div id="projects"></div>
                     </div>
                 </div>
 
-                <div id="projects"></div>
+
             </div >
 
 
@@ -233,6 +234,7 @@ export default function Body() {
             </div>
 
             <div className="projects" id="blur"  >
+
                 <Tilt className="parallax-effect" perspective={500} >
                     <div className="project rgb" data-aos='slide-up'>
                         <img src={h6} alt="" />
@@ -320,6 +322,7 @@ export default function Body() {
                 </Tilt>
 
             </div>
+            <div id="services"></div>
             <div>
                 <div className="popup" id="popup_1">
                     <Carousel showArrows={true} thumbWidth={100} autoPlay={true} interval={2000} transitionTime={500} swipeScrollTolerance={2} infiniteLoop={true}>
@@ -517,7 +520,7 @@ export default function Body() {
                     <button onClick={toggle7}>Close</button>
                 </div>
             </div>
-            <div id="services"></div>
+
             <div className="separate-3">
                 <div className="line"></div>
                 <h1 data-aos="zoom-in" >Services</h1>
