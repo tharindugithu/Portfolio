@@ -6,19 +6,19 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 } */
-body{
-  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%,rgba(0,212,255,1) 100%);
-}
+/* body{
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%,rgba(0,212,255,1) 100%); 
+} */
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
 ::-webkit-scrollbar{
   width: 10px;
-  
+  background-color: rgb(3, 23, 110);
 }
 ::-webkit-scrollbar-thumb{
- background:linear-gradient(transparent,#30ff00);
+ background:#3300ff;
 border-radius: 5px;
 }
 html{

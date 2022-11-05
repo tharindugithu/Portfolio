@@ -4,7 +4,7 @@ import emailjs from 'emailjs-com'
 import { Swiper, SwiperSlide } from "swiper/react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faMapMarked, faPhone, faMailBulk, faPaperPlane } from '@fortawesome/free-solid-svg-icons'
-import { faFacebook, faInstagram, faWhatsapp, faLinkedin, faTelegram, faTwitter } from '@fortawesome/free-brands-svg-icons'
+import { faFacebook, faInstagram, faWhatsapp, faLinkedin, faTelegram, faTwitter, faGithub } from '@fortawesome/free-brands-svg-icons'
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/effect-coverflow";
@@ -13,7 +13,7 @@ import "swiper/css/pagination";
 import "./Body.css";
 import Aos from "aos";
 import 'aos/dist/aos.css'
-import Tilt from 'react-parallax-tilt';
+import { ToastContainer, toast } from 'react-toastify';
 // import required modules
 import { EffectCoverflow, Pagination } from "swiper";
 import { useForm } from "react-hook-form";
@@ -77,7 +77,16 @@ export default function App() {
             emailjs.sendForm('service_gpft2oo', 'template_tbs4v1d', e.target, '0p1Em6OBb8nYMGI7R')
                 .then((result) => {
                     console.log(result.text);
-                    alert('Details Are Submitted')
+                    toast.success("Submitted successfull", {
+                        position: "bottom-center",
+                        autoClose: 5000,
+                        hideProgressBar: false,
+                        closeOnClick: true,
+                        pauseOnHover: true,
+                        draggable: true,
+                        progress: undefined,
+                        theme: "light",
+                    });
                     setFormErrors({
                         from_nameError: '',
                         to_nameError: '',
@@ -90,11 +99,30 @@ export default function App() {
                     })
                 }, (error) => {
                     console.log(error.text);
-                    alert('Something Went Wrong!!!')
+                    toast.error("Something went wrong!", {
+                        position: "bottom-center",
+                        autoClose: 5000,
+                        hideProgressBar: false,
+                        closeOnClick: true,
+                        pauseOnHover: true,
+                        draggable: true,
+                        progress: undefined,
+                        theme: "light",
+                    });
                 });
             e.target.reset()
         } else {
-            alert('Please Input Valid Data!!!')
+            // alert('Please Input Valid Data!!!')
+            toast.error("Please Input Valid Data!!!", {
+                position: "bottom-center",
+                autoClose: 5000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: true,
+                draggable: true,
+                progress: undefined,
+                theme: "light",
+            });
             setTimeout(delay, 2000)
             function delay() {
                 setForm({
@@ -301,12 +329,13 @@ export default function App() {
                     <div className="color"></div>
                     <div className="color"></div>
                     <ul>
-                        <li><a href=""><FontAwesomeIcon icon={faFacebook} size='2x' /></a></li>
-                        <li><a href=""><FontAwesomeIcon icon={faLinkedin} size='2x' /></a></li>
-                        <li>< a href=""><FontAwesomeIcon icon={faWhatsapp} size='2x' /></a></li>
-                        <li><a href=""><FontAwesomeIcon icon={faInstagram} size='2x' /></a></li>
-                        <li><a href=""><FontAwesomeIcon icon={faTelegram} size='2x' /></a></li>
-                        <li><a href=""><FontAwesomeIcon icon={faTwitter} size='2x' /></a></li>
+                        <li><a href="https://www.facebook.com/tharindu.mandusanka.3" target={'_blank'}><FontAwesomeIcon icon={faFacebook} size='2x' /></a></li>
+                        <li><a href="https://www.linkedin.com/in/tharindu-mandusanka-44785a208" target={'_blank'} ><FontAwesomeIcon icon={faLinkedin} size='2x' /></a></li>
+                        <li>< a href="https://api.whatsapp.com/send?phone=94768783078" target={'_blank'} ><FontAwesomeIcon icon={faWhatsapp} size='2x' /></a></li>
+                        <li><a href="" target={'_blank'} ><FontAwesomeIcon icon={faInstagram} size='2x' /></a></li>
+                        <li><a href="https://t.me/Tharinduaa1677" target={'_blank'} ><FontAwesomeIcon icon={faTelegram} size='2x' /></a></li>
+                        <li><a href="https://twitter.com/TMandusanka" target={'_blank'} ><FontAwesomeIcon icon={faTwitter} size='2x' /></a></li>
+                        <li><a href="https://github.com/tharindugithu" target={'_blank'} ><FontAwesomeIcon icon={faGithub} size='2x' /></a></li>
                     </ul>
                 </section>
                 <section className="fotter">

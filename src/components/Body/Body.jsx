@@ -33,8 +33,9 @@ import h3 from './h3.JPG'
 import h4 from './h4.JPG'
 import h5 from './h5.JPG'
 import roc from './rocket.png'
-import wal1 from './wal1.jpg'
-import profile from './profile.png'
+import wal2 from './wal2.jpg'
+import wal from './wal.jpg'
+import profile from './profile.jpg'
 import github from './github.png'
 import h6 from './health.JPG'
 import B1 from './B1.png'
@@ -188,6 +189,8 @@ export default function Body() {
                     <h1 id="bioo">Mobile App Devaloper</h1>
                 </div>
             </div>
+            <div className="animline">
+            </div>
             <div className="container">
                 <div className="intro" >
                     {/* <div className="insidebox">
@@ -206,7 +209,7 @@ export default function Body() {
                     </div>
                     <div className="info-2">
                         <div className="intro-image" >
-                            <img data-aos="zoom-in" src={wal1} alt="image fo intro" />
+                            <img data-aos="zoom-in" src={wal2} alt="image fo intro" />
                         </div>
                         <div className="bio" >
                             <h1 className="name">Tharindu Mandusanka</h1>
@@ -445,6 +448,7 @@ export default function Body() {
                 <div className="popup" id="popup_5">
                     <Carousel showArrows={true} thumbWidth={100} autoPlay={true} interval={2000} transitionTime={500} swipeScrollTolerance={2} infiniteLoop={true}>
                         <img src={B1} alt="" />
+                        <img src={B1} alt="" />
                     </Carousel>
                     <h1> Java Bidding System with Client Server and Publisher Subscriber architectures</h1>
                     <p style={mystyle}>&#x2022;Login and Registration</p>
@@ -523,7 +527,7 @@ export default function Body() {
 
             <div className="separate-3">
                 <div className="line"></div>
-                <h1 data-aos="zoom-in" >Services</h1>
+                <h1 data-aos="zoom-in" >SKILLS</h1>
                 <div className="line"></div>
             </div>
 

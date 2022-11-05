@@ -458,7 +458,14 @@ margin-right: 0.3%;
   transform: skewX(45deg) translateX(150px);
   transition: 0.5s;
 }
-
+.social ul li:nth-child(7) a:hover {
+  transform: translateY(-20px);
+  background: #150030;
+  box-shadow: 0 0 5px #150030,
+    0 0 15px #150030,
+    0 0 30px #150030,
+    0 0 60px #150030;
+}
 .social ul li a:hover:before {
   transform: skewX(45deg) translateX(-150px);
 }
@@ -567,8 +574,8 @@ width: 200px;
 }
   .social ul {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    column-gap: 40px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    column-gap: 30px;
     width: fit-content;
     margin-left: 210%;
     margin-right: 20%;

@@ -1,8 +1,11 @@
+import React from "react";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+import Par from "./components/Par";
 import Navbar from './components/Navbar/Navbar'
 import Body from './components/Body/Body'
 import Body2 from "./portfolio/body/Body";
 import { useEffect, useState } from 'react';
-import HashLoader from "react-spinners/HashLoader";
 import './App.css'
 import { FlipFlopLoader } from "react-awesome-loaders";
 import { CircleLoader } from "react-awesome-loaders";
@@ -45,9 +48,22 @@ function App() {
         :
          
         <>
+   <ToastContainer
+position="bottom-center"
+autoClose={5000}
+hideProgressBar={false}
+newestOnTop={false}
+closeOnClick
+rtl={false}
+pauseOnFocusLoss
+draggable
+pauseOnHover
+theme="light"
+/>
      <Navbar/> 
+      <Par/> 
      <Body/>
-     <Body2  /> 
+     <Body2  />  
         </>
       }
     

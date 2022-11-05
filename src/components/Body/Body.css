@@ -12,6 +12,7 @@
 
 body {
     font-family: 'Inter', sans-serif;
+   
 
 }
 
@@ -22,7 +23,7 @@ body {
 
 }
 
-.fix-btn {}
+
 
 .intro {
     height: 1480px;
@@ -53,8 +54,19 @@ body {
     align-items: center;
     margin-top: 8.2vh;
     min-height: 91.8vh;
-    
+
+   
     /* margin-top: 82px; */
+}
+.animline{
+    width: 100%;
+    height: 4px;
+    background: #d8dbdf;
+    box-shadow: 0 0 25px #3742fa,
+    0 0 35px #fa6137,
+    0 0 45px #fa37e3,
+    0 0 70px #bc00ea;
+   
 }
 
 .info-2 {
@@ -76,7 +88,7 @@ body {
     font-family: 'Raleway', sans-serif;
     width: 96%;
     position: absolute;
-    top: 100px;
+    top: 46px;
     left: 2%;
     color: aliceblue;
     border-radius: 10px;
@@ -102,13 +114,17 @@ body {
     text-indent: 50px;
     text-align: justify;
     letter-spacing: 1px;
+    color: #ffffff;
 
 }
 
 .bio p {
     align-self: flex-start;
 }
+.bio img{
+    border-radius: 40px;
 
+}
 .project img {
     width: 100%;
     border-radius: 10px;
