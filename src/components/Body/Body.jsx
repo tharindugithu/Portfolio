@@ -41,6 +41,11 @@ import h6 from './health.JPG'
 import B1 from './B1.png'
 import M1 from './M1.JPG'
 import M2 from './M2.JPG'
+import A1 from './A1.JPG'
+import A2 from './A2.JPG'
+import A3 from './A3.JPG'
+import A4 from './A4.JPG'
+import A5 from './A5.JPG'
 
 export default function Body() {
     const mystyle = {
@@ -313,9 +318,9 @@ export default function Body() {
                 </div></Tilt>
                 <Tilt className="parallax-effect" perspective={500}>
                     <div className="project rgb" data-aos='slide-up' >
-                        <img src={h6} alt="" />
-                        <h3>Health Care WebApp</h3>
-                        <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At accusamus, accusantium quasi maxime omnis blanditiis laboriosam maiores tempora minima officia.</h4>
+                        <img src={A5} alt="" />
+                        <h3>Car Doc Mobile App</h3>
+                        <h4>Purpose of this project improve android app dev skill and java related knowledge.User can register car for selling and other purposes AND EASY TO use this kind of app.</h4>
                         <button onClick={toggle7}>Reed more..</button>
                         <button>
                             <img src={github} alt="" />
@@ -510,16 +515,18 @@ export default function Body() {
 
                 <div className="popup" id="popup_7">
                     <Carousel showArrows={true} thumbWidth={100} autoPlay={true} interval={2000} transitionTime={500} swipeScrollTolerance={2} infiniteLoop={true}>
-                        <img src={h6} alt="" />
-                        <img src={h6} alt="" />
-                        <img src={h6} alt="" />
-                        <img src={h6} alt="" />
+                        <img src={A1} alt="" />
+                        <img src={A2} alt="" />
+                        <img src={A3} alt="" />
+                        <img src={A4} alt="" />
                     </Carousel>
-                    <h1>Min ipsum dolor sit amet consectetur adipisicing elit. Eum, omnis.</h1>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita, voluptatibus. Similique tempora ex cumque inventore, autem nesciunt commodi fuga unde?</p>
+                    <h1>Car Registration Mobile App.</h1>
+                    <p>Purpose of this project improve android app dev skill and java related knowledge</p>
+                    <br /><h3>Link</h3>
+                    <p style={mystyle}>&#x2022;Application Github -- <a href="https://github.com/tharindugithu/Car_Doc_App" target={'blank'}>Click to visit</a> </p>
                     <button className="goproject">
                         <img src={github} alt="" />
-                        <a href="http://">Goto Project</a>
+                        <a href="https://github.com/tharindugithu/Car_Doc_App">Goto Project</a>
                     </button>
                     <button onClick={toggle7}>Close</button>
                 </div>
